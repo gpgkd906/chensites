@@ -1,0 +1,32 @@
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="メインコンテンツ" tabindex="0">
+<div class="wrap">
+<h2>
+  店舗情報管理
+</h2>
+<?php
+   if(empty($info)) { 
+       echo "店舗情報未登録";
+       return;
+   }
+   $form->start(); 
+if($form->submitted()) { 
+echo '<div id="setting-error-settings_updated" class="updated settings-error"><p><strong>設定を保存しました。</strong></p></div>';
+}
+?>
+<table class="form-table">
+<?php 
+   $form->each(function($name, $input) {
+echo "<tr><th scope='row'>", $name, "</th><td>", $input, "</td></tr>";
+});
+?>
+</table>
+<?php 
+echo $form->submit;
+$form->end();
+?>
+</div>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div>

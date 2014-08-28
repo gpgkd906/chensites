@@ -1,0 +1,20 @@
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="メインコンテンツ" tabindex="0">
+<div class="wrap">
+<h2>
+  店舗データ読み込み
+</h2>
+<h3>CSVアップロード</h3>
+<div>登録されてない店舗は新規にサイトを生成します。
+<br/>登録済みの店舗サイトは更新されます。</div>
+<p></p>
+<?php $form->start(); ?>
+<?php echo $form->csv->error, $form->csv; ?>
+<?php echo $form->submit; ?>
+<?php $form->end(); ?>
+
+</div>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div>
