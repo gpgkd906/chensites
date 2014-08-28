@@ -1,15 +1,15 @@
 <?php
 /**
- * @package penseur
+ * @package chensites
  * @version 0.1
  */
 /*
 Plugin Name: Webseur
-Plugin URI: http://www.penseur.co.jp
+Plugin URI: http://www.gpgkd906.com
 Description: webseurのプラグイン
-Author: penseur
+Author: gpgkd906
 Version: 1.0
-Author URI: http://www.penseur.co.jp/
+Author URI: http://www.gpgkd906.com/
 */
 require_once dirname(__FILE__)."/engine/App.class.php";
 
